@@ -1,0 +1,11 @@
+- hosts: all 
+  become: true
+  tasks:
+  - name: "Install dependecies"
+    apt:
+      pkg: 
+      - apt-transport-https
+      - ca-certificates \
+      - curl \
+      - gnupg \
+      - lsb-release 

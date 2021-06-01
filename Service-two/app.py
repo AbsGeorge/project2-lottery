@@ -10,18 +10,14 @@ app = Flask(__name__)
 @app.route('/get_lotterynumbers', methods=['GET'])
 def lotterynumbers():
     winningnumber = []
-    for i in range(1,5):
+    for i in range(1,6):
         n = random.randint(1,50)
         winningnumber.append(n)
 
-        return winningnumber
+    winningnumber_string = str(winningnumber)
 
-@app.route('/get_lotteryalpha', methods=['GET'])
-def get_noise():
-    letters = string.ascii_lowercase
-    alphabet = (random.choice(letters) for i in range(length)
-    
-    return alphabet
+    return winningnumber_string
+
 
 
 if __name__ == "__main__":

@@ -13,6 +13,7 @@ class WinningNumbers(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     lotnum = db.Column(db.String(50), nullable=False)
     lotalpha = db.Column(db.String(50), nullable=False)
+    user_numbers = db.Column(db.String(50), nullable=False)
 
 @app.route('/')
 def home():

@@ -6,7 +6,8 @@ project_name=lottery_api
 docker build -t ${project_name}_server server 
 
 #Build animal api
-docker build -t ${project_name}_api animal_api
+docker build -t ${project_name}_api lottery_number_api
+docker build -t ${project_name}_api lottery_alpha_api
 
 #create network 
 docker network create ${project_name}_network 
