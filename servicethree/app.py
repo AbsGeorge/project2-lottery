@@ -8,7 +8,7 @@ app = Flask(__name__)
 def get_noise():
     letters = string.ascii_lowercase
     alphabet = [random.choice(letters) for i in range(2)]
-    alphabet_string = str(alphabet)
+    alphabet_string = "".join(alphabet)
 
     return alphabet_string
 

@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 
 SECRET_KEY = os.urandom (32)
-app.config['SECRET_KEY'] = SECRET_KEY
+app.config['SECRET_KEY'] = "fdhalsdjfbrlwiubg"
 
 
 @app.route('/', methods = ['GET', 'POST'])
@@ -19,7 +19,7 @@ def results():
 
     form = PlayForm()
     
-    if form.validate_on_submit():
+    if request.method == "POST" and form.validate_on_submit():
 
         lotteryentry = form.lottery_numbers.data + form.lottery_alphabets.data
 
@@ -33,9 +33,13 @@ def results():
         }).text
     
         winning_numbers = lotterynumber + lotteryalpha
+        return render_template("index.html", winning_numbers=winning_numbers, results=results, lotteryentry=lotteryentry)
 
+    elif request.method == "POST":
 
-    return render_template("index.html", form=form)
+        raise ValueError(form.errors)
+
+    return render_template("home.html", form=form)
 
 
 

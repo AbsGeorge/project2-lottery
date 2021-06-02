@@ -1,4 +1,10 @@
-{% extends 'layout.html' %}
+<html>
+    <head>
+       <title> Play The Lottery! {{ title }}</title>
+    </head>
+    <body>
+       <h1> Play The Lottery! {{ title }}</h1>
+
 {% block body_content %}
     <form action='' method='POST'>
 
@@ -8,9 +14,11 @@
         <br>
         <br>
         {{ form.lottery_alphabets.label }} {{ form.lottery_alphabets }} <br>
-
+        <br>
         {{ form.submit }}
     </p>
     </form>
+    </body>
+</html>
 
 {% endblock body_content %}

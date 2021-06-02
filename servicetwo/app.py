@@ -11,10 +11,10 @@ app = Flask(__name__)
 def lotterynumbers():
     winningnumber = []
     for i in range(1,6):
-        n = random.randint(1,50)
+        n = random.randint(0,9)
         winningnumber.append(n)
 
-    winningnumber_string = str(winningnumber)
+    winningnumber_string = "".join(map(str,winningnumber))
 
     return winningnumber_string
 

@@ -1,0 +1,12 @@
+Flask==1.1.1
+Flask-SQLAlchemy==2.4.1
+SQLAlchemy==1.3.11
+Werkzeug==0.16.1
+flask_wtf
+pytest-cov
+flask-testing
+selenium
+wtforms
+Jinja2==2.11.2
+requests
+pytest==5.4.3

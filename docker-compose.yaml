@@ -1,19 +1,23 @@
 version: "3.8"
 services:
   server:
-    container_name: loterry_number_server
+    container_name: loterry_numbers_server
     image: absgeorge/lottery_numbers_server
-    build: ./server
+    build: ./serviceone
     ports: 
     - published: 5000
       target: 5000
-    environment:
-      DATABASE_URI: ${DATABASE_URI}
-  api:
+  servicetwo:
     container_name: lottery_number_api
     image: absgeorge/lottery_number_api
-    build: ./lottery_api
-  api:
-        container_name: lottery_alpha_api
-        image: absgeorge/lottery_alpha_api
-        build: ./lottery_api
+    build: ./servicetwo
+  servicethree:
+    container_name: lottery_alpha_api
+    image: absgeorge/lottery_alpha_api
+    build: ./servicethree
+  servicefour:
+    container_name: results_api
+    image: absgeorge/results_api
+    build: ./servicefour
+    environment:
+     DATABASE_URI: ${DATABASE_URI}

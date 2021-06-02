@@ -8,16 +8,12 @@
         <h1>
             Winning Lottery Numbers  
         </h1>
+        {{ results }}
         <p>
          Your lottery number is {{ lotteryentry }}
         </p>
         The winning lottery number is {{ winning_numbers }}
     </p>
-        {% if lotteryentry == winning_numbers %}
-        You have won £5 million
-        {%- else -%}
-        You did not win this time
-        {% endif %}
 </body>
 </html>
     </body>

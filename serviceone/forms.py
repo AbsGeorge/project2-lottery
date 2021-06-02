@@ -13,6 +13,6 @@ class PlayForm(FlaskForm):
     lottery_alphabets  = StringField('Choose two letters',
             validators = [
                 DataRequired(),
-                Length(min=2, max=3)
+                Length(min=2, max=2)
                 ])
     submit = SubmitField("Submit" )
