@@ -1,4 +1,4 @@
-from flask import Flask, request, Response
+from flask import Flask, request, Response, render_template
 from flask_sqlalchemy import SQLAlchemy
 from os import getenv
 from sqlalchemy import desc
@@ -36,7 +36,6 @@ def home():
         return Response("You have won £5 million", mimetype='text/plain')
     else:
         return Response("You did not win this time", mimetype='text/plain')
-
 
    
 if __name__ == "__main__":
