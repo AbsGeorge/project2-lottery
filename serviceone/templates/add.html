@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+    <form action='' method='POST'>
+
+    <p>
+        {{ form.hidden_tag() }}
+        {{ form.lottery_numbers.label }} {{ form.lottery_numbers }} <br>
+        <br>
+        <br>
+        {{ form.lottery_alphabets.label }} {{ form.lottery_alphabets }} <br>
+
+        {{ form.submit }}
+    </p>
+    </form>
+
+{% endblock body_content %}
