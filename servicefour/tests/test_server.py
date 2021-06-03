@@ -1,4 +1,4 @@
-rom flask import url_for
+from flask import url_for
 from flask_testing import TestCase
 import requests_mock 
 
@@ -10,8 +10,8 @@ class TestBase(TestCase):
 
 class TestHome(TestBase):
     def test_home(self):
-        with requests_mock.Mocker() as mocker:
-            mocker.get
-            mocker.post
-            response = self.client.get(url_for('home'))
-            self.assertEqual(response.status_code, 200)
+        
+        response = self.client.post(url_for('/'))
+        self.assertEqual(response.data.decode(), entry = ["entry"],
+        lotterynumber = ["number"],
+        lotteryalpha = ["alphabet"])

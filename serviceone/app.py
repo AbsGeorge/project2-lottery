@@ -1,10 +1,24 @@
 from flask import Flask 
-from flask import redirect, render_template, request, url_for
-from forms import PlayForm
+from flask import render_template, request
 import requests
-import random
 import os 
 from os import getenv
+from flask_wtf import FlaskForm
+from wtforms import SubmitField, StringField
+from wtforms.validators import DataRequired, Length
+
+class PlayForm(FlaskForm):
+    lottery_numbers  = StringField('Choose Five numbers between 1 and 50',
+            validators = [
+                DataRequired(),
+                Length(min=5, max=5)
+                ])
+    lottery_alphabets  = StringField('Choose two letters',
+            validators = [
+                DataRequired(),
+                Length(min=2, max=2)
+                ])
+    submit = SubmitField("Submit" )
 
 app = Flask(__name__)
 
@@ -14,7 +28,7 @@ app.config['SECRET_KEY'] = "fdhalsdjfbrlwiubg"
 
 
 @app.route('/', methods = ['GET', 'POST'])
-@app.route('/home')
+@app.route('/home', methods = ['GET', 'POST'])
 def results():
 
     form = PlayForm()
