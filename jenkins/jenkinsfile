@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+    environment {
+
+    }
+    stages {
+        stage('Test') {
+            steps { 
+                sh 'bash jenkins/test.sh'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'docker-build -t absgeorge/serviceone'
+                sh 'docker-build -t absgeorge/servicetwo'
+                sh 'docker-build -t absgeorge/servicethree'
+                sh 'docker-build -t absgeorge/servicefour'
+            }
+        }
+        stage('push') {
+            steps {
+                sh 'docker psuh absgeorge/serviceone:latest'
+                sh 'docker psuh absgeorge/servicetwo:latest'
+                sh 'docker psuh absgeorge/servicethree:latest'
+                sh 'docker psuh absgeorge/servicefour:latest'
+        }
+        stage('configurations with ansible (dockerswarm, Nginx,template') {
+            steps {
+                //
+            }
+        }
+        stage('deploy') {
+            steps {
+                //
+           }
+        }
+    
+    }
+    post{
+        // publish junit cobertura reports 
+    }
+
+}
