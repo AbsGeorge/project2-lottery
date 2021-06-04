@@ -36,7 +36,7 @@ pipeline {
         post{
             always{
                 junit "junit/*.xml"
-            cobertura coberturaReportFile 'coverage.xml', fallNoReports:false 
+            cobertura coberturaReportFile: 'coverage.xml', fallNoReports:false 
             }
         }
     }
