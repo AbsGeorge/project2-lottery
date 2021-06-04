@@ -26,12 +26,8 @@ pipeline {
         stage('push') {
             steps {
                 sh 'docker-compose push'
-        }
-        stage('configurations with ansible (dockerswarm, Nginx,template') {
-            steps {
-                //
             }
-        }
+        }   
         stage('deploy') {
             steps {
                 sh 'bash Jenkins/deploy.sh'
