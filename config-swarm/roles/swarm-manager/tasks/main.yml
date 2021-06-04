@@ -1,0 +1,12 @@
+---
+- name: Init a new swarm
+  docker_swarm:
+  state: present 
+
+- name: Shows stack info 
+  docker_stack_info: 
+  register: swarm_info  
+
+- name: "show info"
+  debug: 
+    msg: "{{ swarm_info }}"

@@ -4,8 +4,6 @@ pipeline {
         DATABASE_URI = credentials ('DATABASE_URI')
         SECRET_KEY = credentials('SECRET_KEY')
         DOCKER_LOGIN = credentials ('DOCKER_LOGIN')
-
-
     }
     stages {
         stage('Test') {
@@ -17,22 +15,17 @@ pipeline {
             steps {
                 sh 'bash jenkins/setup-docker.sh'
             }
-
         }
         stage('build') {
             steps {
-                sh 'docker-build -t absgeorge/serviceone'
-                sh 'docker-build -t absgeorge/servicetwo'
-                sh 'docker-build -t absgeorge/servicethree'
-                sh 'docker-build -t absgeorge/servicefour'
+                sh 'docker-compose build --parellel'
+                sh 'docker login -u $DOCKER_LOGIN_USR -p-stdin $DOCKER_LOGIN_PSW'
+                
             }
         }
         stage('push') {
             steps {
-                sh 'docker psuh absgeorge/serviceone:latest'
-                sh 'docker psuh absgeorge/servicetwo:latest'
-                sh 'docker psuh absgeorge/servicethree:latest'
-                sh 'docker psuh absgeorge/servicefour:latest'
+                sh 'docker-compose push'
         }
         stage('configurations with ansible (dockerswarm, Nginx,template') {
             steps {
@@ -41,20 +34,13 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                //
+                sh 'bash Jenkins/deploy.sh'
            }
         }
-        stage('run') {
-            steps {
-                'docker run -d -p 80:5000 -e DATABASE_URI=$DATABASE_URI -e SECRET_KEY=$SECRET_KEY --name servicefour absgeorge/servicefour:latest'
-                'docker run -d -p 80:5000  --name servicefour absgeorge/servicefour:latest'
-                'docker run -d -p 80:5000  --name servicefour absgeorge/servicefour:latest'
-                'docker run -d -p 80:5000  --name servicefour absgeorge/servicefour:latest'
-           }
+        post{
+            always{
+                junit "junit/*.xml"
+            cobertura coberturaReportFile 'coverage.xml', fallNoReports:false 
+            }
         }
     }
-    post{
-        // publish junit cobertura reports 
-    }
-
-}

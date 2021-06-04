@@ -1,0 +1,9 @@
+all: 
+  children: 
+   managers: 
+     hosts: 
+       host-1:
+   workers:
+     hosts:
+  vars:
+    ansible_python_interpreter: "/usr/bin/python3"

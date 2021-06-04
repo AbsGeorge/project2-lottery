@@ -1,0 +1,10 @@
+- hosts: all 
+  become: true 
+  roles: 
+  - install-docker 
+
+- hosts: managers 
+  become: true 
+  roles:
+  - swarm-manager 
+
