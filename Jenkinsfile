@@ -1,10 +1,10 @@
 pipeline {
     agent any
     environment { 
-        DATABASE_URI = credentials ('SQLALCHEMY_DATABASE_URI')
+        DATABASE_URI = credentials('SQLALCHEMY_DATABASE_URI')
         SECRET_KEY = credentials('SECRET_KEY')
-        username = credentials ('USERNAME')
-        password = credentials ('PASSWORD')
+        username = credentials('USERNAME')
+        password = credentials('PASSWORD')
     }
     stages {
         stage('Test') {
