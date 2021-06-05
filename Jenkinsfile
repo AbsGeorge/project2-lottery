@@ -14,7 +14,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'docker-compose build --parellel'
+                sh 'docker-compose build --parellel' 
                 sh 'docker login -u ${username} -p ${password}'  
             }
         }
@@ -25,7 +25,8 @@ pipeline {
         }  
         stage('configuration') {
             steps {
-                sh 'ansible-playbook -i inventory playbook.yaml'
+                sh "sudo apt install ansible -y"
+                sh "bash ansible.sh"
                 sh 'ansible-playbook -i config-swarm/inventory.yaml config-swarm/playbook.yaml'
             }
         }    
