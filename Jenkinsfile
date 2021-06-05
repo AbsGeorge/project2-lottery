@@ -1,9 +1,10 @@
 pipeline {
     agent any
     environment { 
-        DATABASE_URI = credentials ('DATABASE_URI')
+        DATABASE_URI = credentials ('SQLALCHEMY_DATABASE_URI')
         SECRET_KEY = credentials('SECRET_KEY')
-        DOCKER_LOGIN = credentials ('DOCKER_LOGIN')
+        username = credentials ('USERNAME')
+        passowrd = credentials ('PASSWORD')
     }
     stages {
         stage('Test') {
@@ -19,7 +20,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'docker-compose build --parellel'
-                sh 'docker login -u $DOCKER_LOGIN_USR -p-stdin $DOCKER_LOGIN_PSW'  
+                sh 'docker login -u ${username} -p ${password}'  
             }
         }
         stage('push') {
