@@ -38,11 +38,10 @@ pipeline {
                 sh 'bash jenkins/deploy.sh'
            }
         }
-    }
         post{
             always{
                 junit "junit/*.xml"
-            cobertura coberturaReportFile: 'coverage.xml', failNoReports:false 
+                cobertura coberturaReportFile: 'coverage.xml', failNoReports:false 
             }
         }
     }
