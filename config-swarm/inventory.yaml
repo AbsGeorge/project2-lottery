@@ -9,6 +9,6 @@ all:
         swarm-worker3:
     load_balance:
       hosts:
-        load-balance:
+        load-balancer:
   vars:
     ansible_python_interpreter: "/usr/bin/python3"
