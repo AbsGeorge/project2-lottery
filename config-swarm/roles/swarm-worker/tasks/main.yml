@@ -2,6 +2,6 @@
 - name: Add worker
   docker_swarm:
     state: join
-    advertise_addr: swarm-worker2
+    advertise_addr: "{{ groups['workers'] }}"
     join_token: "{{ hostvars['swarm-master']['swarm_info']['swarm_facts']['JoinTokens']['Worker'] }}"
-    remote_addrs: [ 'swarm-managermaster:2377' ]
+    remote_addrs: [ 'swarm-master:2377' ]
