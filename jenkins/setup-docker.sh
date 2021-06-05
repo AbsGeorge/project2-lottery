@@ -7,8 +7,8 @@ sudo curl -L "https://github.com/docker/compose/releases/download/${version}/doc
 sudo chmod +x /usr/local/bin/docker-compose
 
 # Add jenkins to docker group 
-sudo usermod aG docker jenkins 
+sudo usermod -aG docker jenkins 
 
 #log into Docker 
 
- docker login -u $DOCKER_LOGIN_USR -p-stdin $DOCKER_LOGIN_PSW
+docker login -u ${USERNAME} -p ${PASSWORD}
