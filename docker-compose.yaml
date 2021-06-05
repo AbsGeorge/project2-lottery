@@ -1,21 +1,21 @@
 version: "3.8"
 services:
-  server:
-    container_name: loterry_numbers_server
+  loterry_numbers_server:
+    container_name: lottery_numbers_server
     image: absgeorge/lottery_numbers_server
     build: ./serviceone
     ports: 
     - published: 5000
       target: 5000
-  servicetwo:
+  lottery_number_api:
     container_name: lottery_number_api
     image: absgeorge/lottery_number_api
     build: ./servicetwo
-  servicethree:
+  lottery_alpha_api:
     container_name: lottery_alpha_api
     image: absgeorge/lottery_alpha_api
     build: ./servicethree
-  servicefour:
+  results_api:
     container_name: results_api
     image: absgeorge/results_api
     build: ./servicefour
