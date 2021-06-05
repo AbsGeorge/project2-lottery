@@ -6,5 +6,5 @@
 - hosts: managers 
   become: true 
   roles:
-  - swarm-manager 
+  - swarm-master 
 

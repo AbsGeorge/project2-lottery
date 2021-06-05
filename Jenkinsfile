@@ -27,10 +27,16 @@ pipeline {
             steps {
                 sh 'docker-compose push'
             }
-        }   
+        }  
+        stage('configuration') {
+            steps {
+                sh 'ansible-playbook -i inventory playbook.yaml'
+                sh 'ansible-playbook -i config-swarm/inventory.yaml config-swarm/playbook.yaml'
+            }
+        }    
         stage('deploy') {
             steps {
-                sh 'bash Jenkins/deploy.sh'
+                sh 'bash jenkins/deploy.sh'
            }
         }
         post{
