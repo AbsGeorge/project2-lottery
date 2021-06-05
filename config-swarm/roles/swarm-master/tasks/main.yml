@@ -4,7 +4,7 @@
     state: present 
 
 - name: "Shows swarm info "
-  docker_swarm_info: 
+  swarm_info: 
     register: swarm_info  
 
 - name: "show info"
