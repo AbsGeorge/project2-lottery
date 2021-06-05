@@ -38,6 +38,7 @@ pipeline {
                 sh 'bash jenkins/deploy.sh'
            }
         }
+    }
         post {
             always{
                 junit "junit/*.xml"
@@ -45,4 +46,4 @@ pipeline {
             }
         }
     }
-}
+
