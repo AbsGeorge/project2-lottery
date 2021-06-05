@@ -12,11 +12,6 @@ pipeline {
                 sh 'bash jenkins/test.sh'
             }
         }
-        stage('Setup Docker'){
-            steps {
-                sh 'bash jenkins/setup-docker.sh'
-            }
-        }
         stage('build') {
             steps {
                 sh 'docker-compose build --parellel'
