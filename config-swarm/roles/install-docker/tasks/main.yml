@@ -34,4 +34,4 @@
 - name: "Install Docker with Pip"
   pip:
     name: bottle 
-    executable: pip3.3
+    executable: pip3
