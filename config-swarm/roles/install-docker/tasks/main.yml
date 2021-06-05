@@ -27,7 +27,7 @@
 
 - name: "add user to docker groups"
   ansible.builtin.user: 
-    name: amorr 
+    name: jenkins 
     groups: docker
     append: yes 
 
