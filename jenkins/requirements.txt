@@ -11,4 +11,3 @@ Jinja2==2.11.2
 requests
 pytest==5.4.3
 pymysql
-python3-pip

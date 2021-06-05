@@ -9,10 +9,14 @@
     - lsb-release
     - python3
     - python3-pip
+    state: latest
+    update_cache: true
+
 - name: "Get Docker Apt Key"  
   apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
     state: present 
+
 - name: "Add Docker repo"
   apt_repository:
     repo: "deb https://download.docker.com/linux/ubuntu bionic stable"
@@ -33,5 +37,6 @@
 
 - name: "Install Docker with Pip"
   pip:
-    name: docker 
+    name: docker
+
   
