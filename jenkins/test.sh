@@ -10,7 +10,7 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 
 #run pytest
-python3 -m pytest serviceone --cov=application  --cov-repot=xml --junitxml=junit/test-results.xml
-python3 -m pytest servicetwo --cov=application  --cov-repot=xml --junitxml=junit/test-results.xml
-python3 -m pytest servicethree --cov=application  --cov-repot=xml --junitxml=junit/test-results.xml
-python3 -m pytest servicefour --cov=application  --cov-repot=xml --junitxml=junit/test-results.xml
+python3 -m pytest serviceone --cov=serviceone  --cov-repot=xml --junitxml=junit/test-results.xml
+python3 -m pytest servicetwo --cov=servicetwo  --cov-repot=xml --junitxml=junit/test-results.xml
+python3 -m pytest servicethree --cov=servicethree  --cov-repot=xml --junitxml=junit/test-results.xml
+python3 -m pytest servicefour --cov=servicefour  --cov-repot=xml --junitxml=junit/test-results.xml
