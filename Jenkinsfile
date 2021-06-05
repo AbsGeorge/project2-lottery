@@ -4,7 +4,7 @@ pipeline {
         DATABASE_URI = credentials ('SQLALCHEMY_DATABASE_URI')
         SECRET_KEY = credentials('SECRET_KEY')
         username = credentials ('USERNAME')
-        passowrd = credentials ('PASSWORD')
+        password = credentials ('PASSWORD')
     }
     stages {
         stage('Test') {
