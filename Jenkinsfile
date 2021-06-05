@@ -19,8 +19,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'docker-compose build --parellel'
-                sh 'docker login -u $DOCKER_LOGIN_USR -p-stdin $DOCKER_LOGIN_PSW'
-                
+                sh 'docker login -u $DOCKER_LOGIN_USR -p-stdin $DOCKER_LOGIN_PSW'  
             }
         }
         stage('push') {
@@ -47,3 +46,4 @@ pipeline {
             }
         }
     }
+}
