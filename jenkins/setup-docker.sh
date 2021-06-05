@@ -11,4 +11,4 @@ sudo usermod -aG docker jenkins
 
 #log into Docker 
 
-docker login -u ${USERNAME} -p ${PASSWORD}
+docker login -u $DOCKER_LOGIN_USR -p-stdin $DOCKER_LOGIN_PSW
