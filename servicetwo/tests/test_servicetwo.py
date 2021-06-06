@@ -11,7 +11,7 @@ class TestHome(TestBase):
         for i in range(1,6):
             response = self.client.get(url_for('lotterynumbers'))
             for number in response.data.decode():
-                self.assertIn(int(number), range(0,10))
+                self.assertIn(int(number), range(0,20))
 
             
 

@@ -11,9 +11,9 @@ db = SQLAlchemy(app)
 
 class WinningNumbers(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    lotnum = db.Column(db.String(5), nullable=False)
-    lotalpha = db.Column(db.String(2), nullable=False)
-    player_numbers = db.Column(db.String(7), nullable=False)
+    lotnum = db.Column(db.String(10), nullable=False)
+    lotalpha = db.Column(db.String(5), nullable=False)
+    player_numbers = db.Column(db.String(10), nullable=False)
 
 @app.route('/', methods=['POST'])
 def home():
