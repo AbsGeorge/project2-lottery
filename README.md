@@ -142,13 +142,13 @@ The information will be gather and stored via the following processes:
 ## Development
 ### Front-End
 
-Home Page 
+Home Page of Version 1
 
-![image of front-end](https://i.gyazo.com/f45d5b7ad6a84bd34af3c32195224987.png)
+![image of front-end](https://i.gyazo.com/bc6e1a5464194ae175f0e44ba4762643.png)
 
-Results Page 
+Home Page of Version 2
 
-![Display After a User Inputs Data](https://i.gyazo.com/d169a0e082a2e26c8f86f03774256ac4.png)
+![Image of front-end](https://i.gyazo.com/7b585d0661710225660b8962dbcadb0b.png)
 
 
 
@@ -166,4 +166,8 @@ Abs Pinnankoh-Morrison
 ### Acknowledgements
 * Oliver Nichols
 * Harry Volker
+
+Also 
+* Philip Lartery 
+* William Dennington
 
