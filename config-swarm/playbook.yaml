@@ -15,7 +15,7 @@
   roles:
   - swarm-worker
 
-- hosts: load-balance
+- hosts: load_balance
   become: true
   roles:
   - nginx

@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/get_lotteryalpha', methods=['GET'])
 def lotteryalphabets():
     letters = string.ascii_lowercase
-    alphabet = [random.choice(letters) for i in range(2)]
+    alphabet = [random.choice(letters) for i in range(3)]
     alphabet_string = "".join(alphabet)
 
     return alphabet_string
