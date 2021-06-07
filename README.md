@@ -143,7 +143,11 @@ The information will be gather and stored via the following processes:
 ## Development
 ### Front-End
 
+Home Page 
+
 ![image of front-end](https://i.gyazo.com/f45d5b7ad6a84bd34af3c32195224987.png)
+
+Results Page 
 
 ![Display After a User Inputs Data](https://i.gyazo.com/d169a0e082a2e26c8f86f03774256ac4.png)
 
@@ -161,5 +165,5 @@ The information will be gather and stored via the following processes:
 Abs Pinnankoh-Morrison 
 
 ### Acknowledgements
-* [Oliver Nichols]
-* [Harry Volker]
+* Oliver Nichols
+* Harry Volker
