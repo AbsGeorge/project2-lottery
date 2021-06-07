@@ -64,7 +64,7 @@ View the original document [here](https://docs.google.com/spreadsheets/d/1olqQSJ
 ### Trello Board
 My project tracking board can be seen below. 
 
-![trello board image](https://gyazo.com/f86b39dca04c4dc275e87fd81a3fa62d.png)
+![trello board image](https://i.gyazo.com/f86b39dca04c4dc275e87fd81a3fa62d.jpg)
 
 View the original board [here](https://trello.com/b/mkSUq0gB/lottery)
 
@@ -75,15 +75,14 @@ I used pytest to run the unit tests on the 4 services. These are designed to det
 
 A total of 4 unit tests were run for each service and Looking at the pipeline image below, they all passed. This is because the pipeline process will breakdown if any of the stages failed.
 
-Pipeline 
-
-![] (https://gyazo.com/4b4789661293d4c55c8d9f3a6444169b)
+ 
+![Pipeline] (https://i.gyazo.com/4b4789661293d4c55c8d9f3a6444169b.png)
 
 I have selected images of random services (1 and 2) below, the display the successfull unit testing and the percentage coverage of testing. 
 
-![Service3 Unit Testing](https://gyazo.com/4e2b4b6aeae1dc5908f1f3632fcb14c6)
+![Service3 Unit Testing](https://i.gyazo.com/4e2b4b6aeae1dc5908f1f3632fcb14c6.png)
 
-![test coverage of frontend server](https://gyazo.com/58c0556294165cbf0e5ea34c4ce2bb49)
+![test coverage of frontend server](https://i.gyazo.com/58c0556294165cbf0e5ea34c4ce2bb49.png)
 
 The exact syntax used for the testing is as below:
 
@@ -116,19 +115,19 @@ Whenever new content is pushed to the `version1` branch, Github will send a webh
 > * Jenkins copies the `docker-compose.yaml` file over to the manager node, SSH's onto it, and then runs `docker stack deploy`.
 
  
-![cicd pipeline image](https://gyazo.com/fa9a04ce4c357369103cc7bea3a77c56)
+![cicd pipeline image](https://i.gyazo.com/fa9a04ce4c357369103cc7bea3a77c56.png)
 
 
-#### **6.** Load Balancer  
+#### **6.** Load Balancer: Nginx 
 > * The N+ icon is nginx. It is being used as a load balancer and is confiqured with ansible to distribute the workload amongst the nodes within the docker swarm. For the purpose of this task, I did not reduce the workload of any node within the swarm. 
 
-#### **7.** Flask 
+#### **7.** Website building and Templating: Flask and Jinja2 
 > * Flask was used to build the website and jinja2 is used to build the website templates.  
 
 ### Entity Diagram
 Below is a very simple entity relational diagram that I used for my project. 
 
-![entitity diagram image](https://gyazo.com/0904920c98bc0fab95f3f0bb762cea10)
+![entitity diagram image](https://i.gyazo.com/0904920c98bc0fab95f3f0bb762cea10.png)
 
 The information will be gather and stored via the following processes: 
 
@@ -137,14 +136,16 @@ The information will be gather and stored via the following processes:
  > * Service 3 will generate random alphabets (lotalpa) and pass it to service 1
  > * Service 4 will take a post request from service one, interact with the database and store these information, followed by comparing the results. 
 
- ![Service Interaction](https://gyazo.com/ea4cebb8907719a6b5932801b2b9cea8)
+ ![Service Interaction](https://i.gyazo.com/e75b99bede09810cba0d970c379520eb.png)
  
 
 
 ## Development
 ### Front-End
 
-![image of front-end](https://gyazo.com/f45d5b7ad6a84bd34af3c32195224987)
+![image of front-end](https://i.gyazo.com/f45d5b7ad6a84bd34af3c32195224987.png)
+
+![Display After a User Inputs Data](https://i.gyazo.com/d169a0e082a2e26c8f86f03774256ac4.png)
 
 
 
