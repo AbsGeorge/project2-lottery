@@ -14,7 +14,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'docker-compose build --parallel --pull' 
+                sh 'docker-compose build --parallel' 
                 sh 'docker login -u ${username} -p ${password}'  
             }
         }
