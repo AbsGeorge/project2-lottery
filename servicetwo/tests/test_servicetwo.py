@@ -8,7 +8,7 @@ class TestBase(TestCase):
 
 class TestHome(TestBase):
     def test_get_number(self):
-        for i in range(1,6):
+        for i in range(1,7):
             response = self.client.get(url_for('lotterynumbers'))
             for number in response.data.decode():
                 self.assertIn(int(number), range(0,20))

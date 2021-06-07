@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route('/get_lotterynumbers', methods=['GET'])
 def lotterynumbers():
     winningnumber = []
-    for i in range(1,6):
+    for i in range(1,7):
         n = random.randint(0,19)
         winningnumber.append(n)
 

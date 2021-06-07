@@ -8,10 +8,10 @@ from wtforms import SubmitField, StringField
 from wtforms.validators import DataRequired, Length
 
 class PlayForm(FlaskForm):
-    lottery_numbers  = StringField('Choose Five numbers between 1 and 20',
+    lottery_numbers  = StringField('Choose Six numbers between 1 and 20',
             validators = [
                 DataRequired(),
-                Length(min=5, max=6)
+                Length(min=6, max=6)
                 ])
     lottery_alphabets  = StringField('Choose three letters',
             validators = [
