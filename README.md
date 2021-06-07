@@ -66,7 +66,7 @@ View the original document [here]https://docs.google.com/spreadsheets/d/1olqQSJ7
 ### Trello Board
 My project tracking board can be seen below. 
 
-![trello board image](https://gyazo.com/f86b39dca04c4dc275e87fd81a3fa62d)
+![trello board image](https://gyazo.com/f86b39dca04c4dc275e87fd81a3fa62d.png)
 
 View the original board [here](https://trello.com/b/mkSUq0gB/lottery)
 
