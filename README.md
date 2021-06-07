@@ -169,7 +169,4 @@ Abs Pinnankoh-Morrison
 * Oliver Nichols
 * Harry Volker
 
-Also 
-* Philip Lartery 
-* William Dennington
 
