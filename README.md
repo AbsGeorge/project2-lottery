@@ -158,6 +158,8 @@ Home Page of Version 2
 * A maximum amount a player can play the game. 
 * A more user friendly Interface
 * A smoother continous integration with efficient version updates 
+* Feature branching 
+* Remaining Calm 
 
 
 ### Author
