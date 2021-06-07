@@ -86,10 +86,10 @@ I have selected images of random services (1 and 2) below, the display the succe
 
 The exact syntax used for the testing is as below:
 
-python3 -m pytest serviceone --cov=serviceone  --cov-report=xml --junitxml=junit/test-results.xml
-python3 -m pytest servicetwo --cov=servicetwo  --cov-report=xml --junitxml=junit/test-results.xml
-python3 -m pytest servicethree --cov=servicethree  --cov-report=xml --junitxml=junit/test-results.xml
-python3 -m pytest servicefour --cov=servicefour  --cov-report=xml --junitxml=junit/test-results.xml
+ > * python3 -m pytest serviceone --cov=serviceone  --cov-report=xml --junitxml=junit/test-results.xml
+ > * python3 -m pytest servicetwo --cov=servicetwo  --cov-report=xml --junitxml=junit/test-results.xml
+ > * python3 -m pytest servicethree --cov=servicethree  --cov-report=xml --junitxml=junit/test-results.xml
+ > * python3 -m pytest servicefour --cov=servicefour  --cov-report=xml --junitxml=junit/test-results.xml
 
 
 
