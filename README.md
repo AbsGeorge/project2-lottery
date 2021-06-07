@@ -150,6 +150,7 @@ The information will be gather and stored via the following processes:
 ### Future Improvements
 * A maximum amount a player can play the game. 
 * A more user friendly Interface
+* A smoother continous integration with efficient version updates 
 
 
 ### Author
