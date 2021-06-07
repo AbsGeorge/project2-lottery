@@ -56,9 +56,7 @@ To meet all of the requirements and to ensure the MVP was produced in the time-f
 I created a risk assessment to analyse any factors that may cause a risk to the project. 
 Below is an image of my detailed risk assessment, which outlines the minor and major risks that have potential to impact the success of this project. 
 
-Risk Assessment 
-
-![](https://gyazo.com/4b8584f239045301ad800545c6022b14)
+![Risk Assessment](https://i.gyazo.com/4b8584f239045301ad800545c6022b14.png)
 
 *Highlighted rows are risks that were discovered as the project progressed.*  
 View the original document [here](https://docs.google.com/spreadsheets/d/1olqQSJ7y09J8EA4TxXEmbGOleK4tgDaq/edit#gid=648475153)
