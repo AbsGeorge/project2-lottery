@@ -11,7 +11,6 @@
 * [Infrastructure](#infrastructure)
   * [Jenkins](#jenkins)
   * [Entity Diagram](#entity-diagram)
-  * [Docker Swarm](#interactions-diagram)
 * [Development](#development)
   * [Front-End Design](#front-end)
 
