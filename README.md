@@ -55,7 +55,10 @@ To meet all of the requirements and to ensure the MVP was produced in the time-f
 ### Risk Assessment
 I created a risk assessment to analyse any factors that may cause a risk to the project. 
 Below is an image of my detailed risk assessment, which outlines the minor and major risks that have potential to impact the success of this project. 
-![risk assessment image](https://gyazo.com/4b8584f239045301ad800545c6022b14)
+
+Risk Assessment 
+
+![](https://gyazo.com/4b8584f239045301ad800545c6022b14)
 
 *Highlighted rows are risks that were discovered as the project progressed.*  
 View the original document [here]https://docs.google.com/spreadsheets/d/1olqQSJ7y09J8EA4TxXEmbGOleK4tgDaq/edit#gid=648475153()
@@ -74,7 +77,9 @@ I used pytest to run the unit tests on the 4 services. These are designed to det
 
 A total of 4 unit tests were run for each service and Looking at the pipeline image below, they all passed. This is because the pipeline process will breakdown if any of the stages failed.
 
-![Pipeline](https://gyazo.com/4b4789661293d4c55c8d9f3a6444169b)
+Pipeline 
+
+![] (https://gyazo.com/4b4789661293d4c55c8d9f3a6444169b)
 
 I have selected images of random services (1 and 2) below, the display the successfull unit testing and the percentage coverage of testing. 
 
@@ -157,4 +162,5 @@ The information will be gather and stored via the following processes:
 Abs Pinnankoh-Morrison 
 
 ### Acknowledgements
-* [Oliver Nichols](https://github.com/OliverNichols)
+* [Oliver Nichols]
+* [Harry Volker]
