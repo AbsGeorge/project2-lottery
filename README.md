@@ -61,7 +61,7 @@ Risk Assessment
 ![](https://gyazo.com/4b8584f239045301ad800545c6022b14)
 
 *Highlighted rows are risks that were discovered as the project progressed.*  
-View the original document [here]https://docs.google.com/spreadsheets/d/1olqQSJ7y09J8EA4TxXEmbGOleK4tgDaq/edit#gid=648475153()
+View the original document [here](https://docs.google.com/spreadsheets/d/1olqQSJ7y09J8EA4TxXEmbGOleK4tgDaq/edit#gid=648475153)
 
 ### Trello Board
 My project tracking board can be seen below. 
